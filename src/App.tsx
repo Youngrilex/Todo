@@ -14,7 +14,7 @@ const TodoApp: React.FC = () => {
       </h1>
       <AddTask />
       <img
-        src="/src/assets/todo.png"
+        src="/todo.png"
         alt="bg"
         className="absolute top-32 sm:top-16 left-8 sm:left-12 w-[150px] h-[175px] sm:w-[300px] sm:h-[350px] lg:w-[450px] lg:h-[525px] z-0"
       />
