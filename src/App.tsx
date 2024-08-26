@@ -1,14 +1,23 @@
 import React from "react";
-import DarkModeToggle from "./DarkModeToggle";
 import AddTask from "./AddTask";
-
+import WeatherTracker from "./WeatherTracker";
+import DailyQuote from "./DailyQuote";
+import Navbar from "./Navbar";
 
 const TodoApp: React.FC = () => {
   return (
-    <div className="body bg-light-gradient dark:bg-dark-gradient h-screen w-full">
-      <div className="p-4 flex justify-end">
-        <DarkModeToggle />
+    <div className="body bg-light-gradient dark:bg-dark-gradient h-full w-full">
+      <Navbar />
+      {/* <Routes>
+        <Route path="/weather" element={<WeatherTracker />} />
+        <Route path="/quote" element={<DailyQuote />} />
+        <Route path="/tasks" element={<AddTask />} />
+      </Routes> */}
+      <div className="relative z-10 p-4 pt-24 flex gap-4 flex-col sm:flex-col md:flex-row lg:flex-row justify-between">
+        <WeatherTracker />
+        <DailyQuote />
       </div>
+
       <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 text-center dark:text-white">
         Todo List
       </h1>
