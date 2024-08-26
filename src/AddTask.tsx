@@ -53,7 +53,11 @@ const AddTask = () => {
   
   return (
 <div>
-    <div className="bg-[url('/src/assets/bg.jpg')] bg-no-repeat bg-cover bg-center relative flex flex-col justify-center mt-8 w-[90%] h-[300px] max-w-lg mx-auto p-6 bg-[#8494ff] dark:bg-[#b3c2f4] text-black dark:text-white rounded-lg shadow-md z-10">
+<h1 className="text-3xl lg:text-5xl font-bold mb-4 text-center dark:text-white">
+        Todo List
+      </h1>
+    <div className="bg-[url('/src/assets/bg.jpg')] bg-no-repeat bg-cover bg-center relative flex flex-col justify-center mt-8 w-[90%] h-[300px] min-w-3xl mx-auto p-6 bg-[#8494ff] dark:bg-[#b3c2f4] text-black dark:text-white rounded-lg shadow-md z-10">
+    
     <input
       type="text"
       placeholder="Enter a new Todo"
@@ -69,7 +73,7 @@ const AddTask = () => {
     </button>  
   </div>
   <div className="relative mt-12 z-20 mx-4 sm:mx-8">
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-full">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-full">
         {todos.map((item) => (
           <li
             key={item.id}
